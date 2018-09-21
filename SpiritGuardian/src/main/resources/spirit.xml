@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Container>
+<Container layout="BoxLayout|Y_AXIS" title="一管子精力" pack="true" resizable="false" iconImage="icons/power.png" minToTray="icons/power.png|每天都有一管子精力可用，请用在最有价值的地方！">
+	<JPanel layout="BoxLayout|X_AXIS" border="TitledBorder|描述">
+		<horizontalStrut>10</horizontalStrut>
+		<JLabel preferredSize="220,47">请将它用在最有价值的地方！不要糟蹋！</JLabel>
+		<horizontalGlue></horizontalGlue>
+	</JPanel>
+	<JPanel layout="BoxLayout|X_AXIS" border="TitledBorder|状态">
+		<horizontalStrut>10</horizontalStrut>
+		<JLabel>状态：</JLabel>
+		<horizontalStrut>5</horizontalStrut>
+		<JLabel id="status">待机中 >>> I'm IN!</JLabel>
+		<horizontalGlue></horizontalGlue>
+	</JPanel>
+</Container>

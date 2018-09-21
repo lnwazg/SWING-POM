@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Container>
+<Container layout="BorderLayout" pack="true">
+	<HardLayoutPane position="North">
+		<TitledLineSeparator>请输入字段名称（按ESC清空）：</TitledLineSeparator>
+		<HardLayoutPane>
+			<JLabel w="1">请输入：</JLabel>
+			<JTextField id="paramName" columns="40"></JTextField>
+		</HardLayoutPane>
+		<TitledLineSeparator w="2">匹配结果：</TitledLineSeparator>
+	</HardLayoutPane>
+	<JScrollPane position="Center" border="0, 7, 0, 7" horizontalScrollBarPolicy="31">
+		<JTextPane id="resultContent" height="240" />
+	</JScrollPane>
+</Container>

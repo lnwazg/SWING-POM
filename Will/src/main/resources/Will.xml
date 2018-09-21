@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Container>
+<Container layout="BoxLayout|Y_AXIS" title="2018碎碎念，一定会实现" pack="true" resizable="false" iconImage="icons/heart.png" minToTray="icons/heart.png|2018碎碎念，一定会实现！">
+	<JPanel layout="BoxLayout|Y_AXIS">
+		<JPanel layout="BoxLayout|X_AXIS" border="TitledBorder|配置">
+			<horizontalStrut>10</horizontalStrut>
+			<JLabel>联网模式(S)：</JLabel>
+			<IOS7SwitchButton id="networkSwitchBtn"></IOS7SwitchButton>
+			<horizontalGlue />
+		</JPanel>
+		<JPanel layout="BoxLayout|X_AXIS">
+			<JPanel layout="BoxLayout|Y_AXIS" border="TitledBorder|愿望清单">
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>01：</JLabel>
+					<JTextPane id="wish1" preferredSize="280,25"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>02：</JLabel>
+					<JTextPane id="wish2"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>03：</JLabel>
+					<JTextPane id="wish3"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>04：</JLabel>
+					<JTextPane id="wish4"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>05：</JLabel>
+					<JTextPane id="wish5"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>06：</JLabel>
+					<JTextPane id="wish6"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>07：</JLabel>
+					<JTextPane id="wish7"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>08：</JLabel>
+					<JTextPane id="wish8"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>09：</JLabel>
+					<JTextPane id="wish9"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>10：</JLabel>
+					<JTextPane id="wish10"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>11：</JLabel>
+					<JTextPane id="wish11"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>12：</JLabel>
+					<JTextPane id="wish12"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>13：</JLabel>
+					<JTextPane id="wish13"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>14：</JLabel>
+					<JTextPane id="wish14"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>15：</JLabel>
+					<JTextPane id="wish15"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>16：</JLabel>
+					<JTextPane id="wish16"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>17：</JLabel>
+					<JTextPane id="wish17"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>18：</JLabel>
+					<JTextPane id="wish18"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>19：</JLabel>
+					<JTextPane id="wish19"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>20：</JLabel>
+					<JTextPane id="wish20"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+			</JPanel>
+			<horizontalStrut>10</horizontalStrut>
+			<JPanel layout="BoxLayout|Y_AXIS" border="TitledBorder|行动清单">
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>01：</JLabel>
+					<JTextPane id="action1" preferredSize="280,25"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>02：</JLabel>
+					<JTextPane id="action2"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>03：</JLabel>
+					<JTextPane id="action3"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>04：</JLabel>
+					<JTextPane id="action4"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>05：</JLabel>
+					<JTextPane id="action5"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>06：</JLabel>
+					<JTextPane id="action6"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>07：</JLabel>
+					<JTextPane id="action7"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>08：</JLabel>
+					<JTextPane id="action8"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>09：</JLabel>
+					<JTextPane id="action9"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>10：</JLabel>
+					<JTextPane id="action10"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>11：</JLabel>
+					<JTextPane id="action11"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>12：</JLabel>
+					<JTextPane id="action12"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>13：</JLabel>
+					<JTextPane id="action13"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>14：</JLabel>
+					<JTextPane id="action14"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>15：</JLabel>
+					<JTextPane id="action15"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>16：</JLabel>
+					<JTextPane id="action16"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>17：</JLabel>
+					<JTextPane id="action17"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>18：</JLabel>
+					<JTextPane id="action18"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>19：</JLabel>
+					<JTextPane id="action19"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JLabel>20：</JLabel>
+					<JTextPane id="action20"></JTextPane>
+					<horizontalStrut>10</horizontalStrut>
+				</JPanel>
+			</JPanel>
+		</JPanel>
+		<verticalStrut>5</verticalStrut>
+		<JPanel layout="BoxLayout|X_AXIS">
+			<horizontalStrut>250</horizontalStrut>
+			<JLabel>今年已实现</JLabel>
+			<horizontalStrut>5</horizontalStrut>
+			<JLabel id="number" foreground="red"></JLabel>
+			<horizontalStrut>5</horizontalStrut>
+			<JLabel>个心愿！</JLabel>
+			<horizontalStrut>50</horizontalStrut>
+			<SmartButton id="add">+</SmartButton>
+			<horizontalStrut>5</horizontalStrut>
+			<SmartButton id="minus">-</SmartButton>
+			<horizontalGlue />
+		</JPanel>
+		<verticalStrut>5</verticalStrut>
+		<JPanel layout="BoxLayout|X_AXIS">
+			<horizontalStrut>250</horizontalStrut>
+			<JLabel>今年已自我突破</JLabel>
+			<horizontalStrut>5</horizontalStrut>
+			<JLabel id="breakNumber" foreground="red"></JLabel>
+			<horizontalStrut>5</horizontalStrut>
+			<JLabel>次！</JLabel>
+			<horizontalStrut>50</horizontalStrut>
+			<SmartButton id="breakAdd">+</SmartButton>
+			<horizontalStrut>5</horizontalStrut>
+			<SmartButton id="breakMinus">-</SmartButton>
+			<horizontalStrut>50</horizontalStrut>
+			<SmartButton id="openWordPad">记录</SmartButton>
+			<horizontalGlue />
+		</JPanel>
+		<verticalStrut>5</verticalStrut>
+	</JPanel>
+</Container>

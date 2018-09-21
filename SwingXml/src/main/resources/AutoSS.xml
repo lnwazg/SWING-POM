@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Container>
+<Container layout="BoxLayout|X_AXIS" iconImage="icons/ss.ico" title="自动SS代理" defaultCloseOperation="EXIT_ON_CLOSE" pack="true" splash="true">
+	<JPanel layout="BoxLayout|Y_AXIS">
+		<JMenuBar>
+			<JMenu>文件</JMenu>
+			<JMenu>视图</JMenu>
+			<JMenu>帮助</JMenu>
+		</JMenuBar>
+
+		<JPanel id="textPanel" border="TitledBorder|这就是你所谓的虚线">
+			<JScrollPane id="paneScrollPane" preferredSize="250,150">
+				<JTextPane id="text" editable="false" autoScrolls="true">
+				</JTextPane>
+			</JScrollPane>
+		</JPanel>
+
+		<JPanel id="handlePanel" border="TitledBorder|操作区" preferredSize="0,150">
+			<JButton>线路1</JButton>
+			<JButton>线路2</JButton>
+			<JButton>线路3</JButton>
+			<JButton>线路4</JButton>
+			<JButton>线路5</JButton>
+			<JButton>线路6</JButton>
+			<JButton>线路7</JButton>
+			<JButton>线路8</JButton>
+			<JButton>线路9</JButton>
+			<JButton>其他1</JButton>
+			<JButton>其他2</JButton>
+			<JButton>其他3</JButton>
+		</JPanel>
+	</JPanel>
+
+	<JPanel layout="BoxLayout|Y_AXIS">
+		<JPanel layout="BoxLayout|X_AXIS">
+			<horizontalGlue></horizontalGlue>
+			<JLabel>坑蒙baby Go：</JLabel>
+			<JComboBox items="AAA|BBB|CCC">
+			</JComboBox>
+			<horizontalGlue></horizontalGlue>
+		</JPanel>
+
+		<JPanel layout="BoxLayout|X_AXIS">
+			<horizontalGlue></horizontalGlue>
+			<JLabel>请选择：</JLabel>
+			<ButtonGroup>
+				<JRadioButton>aaa</JRadioButton>
+				<JRadioButton>bbb</JRadioButton>
+				<JRadioButton>ccc</JRadioButton>
+			</ButtonGroup>
+			<JCheckBox>aaa</JCheckBox>
+			<JCheckBox>bbb</JCheckBox>
+			<JCheckBox>ccc</JCheckBox>
+			<horizontalGlue></horizontalGlue>
+		</JPanel>
+
+		<JPanel id="statusPanel" border="TitledBorder|线路状态" layout="BoxLayout|X_AXIS">
+			<horizontalStrut>10</horizontalStrut>
+			<JLabel id="statusLabel">OK</JLabel>
+			<horizontalGlue></horizontalGlue>
+			<JLabel id="autoSwitchLabel">自动切换：</JLabel>
+			<NonBorderButton id="autoSwitchBtn" toolTipText="自动切换线路" icon="icons/on.png"></NonBorderButton>
+			<horizontalStrut>10</horizontalStrut>
+		</JPanel>
+		<JPanel layout="BorderLayout">
+			<JTabbedPane>
+				<JPanel border="TitledBorder|操作区" preferredSize="0,150" tabText="选项卡A">
+					<JButton>线路1</JButton>
+					<JButton>线路2</JButton>
+					<JButton>线路3</JButton>
+					<JButton>线路4</JButton>
+					<JButton>线路5</JButton>
+					<JButton>线路6</JButton>
+					<JButton>线路7</JButton>
+					<JButton>线路8</JButton>
+					<JButton>线路9</JButton>
+					<JButton>其他1</JButton>
+					<JButton>其他2</JButton>
+					<JButton>其他3</JButton>
+				</JPanel>
+				<JPanel border="TitledBorder|操作区" preferredSize="0,150" tabText="选项卡B">
+					<JButton>线路1</JButton>
+					<JButton>线路2</JButton>
+				</JPanel>
+				<JPanel border="TitledBorder|操作区" preferredSize="0,150" tabText="选项卡c">
+					<JComboBox items="AAA|BBB|CCC">
+					</JComboBox>
+				</JPanel>
+			</JTabbedPane>
+		</JPanel>
+	</JPanel>
+
+<!-- 	<JPanel layout="BoxLayout|Y_AXIS" border="TitledBorder|操作">
+		<HardLayoutPane id="refPanel" w="1" xmlRef="refPanel.xml" />
+	</JPanel> -->
+	
+	<JPanel layout="BoxLayout|Y_AXIS" border="TitledBorder|浏览器">
+		<WebView preferredSize="400,720" url="http://3g.163.com/touch/all?version=v_standard" userAgent="Mozilla/5.0 (iPhone; CPU iPhone OS 8_0 like Mac OS X) AppleWebKit/600.1.3 (KHTML, like Gecko) Version/8.0 Mobile/12A4345d Safari/600.1.4"></WebView>
+	</JPanel>
+</Container>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Container>
+<Container layout="BoxLayout|Y_AXIS" title="屏幕监控" pack="true"
+	resizable="false" iconImage="icons/webcam.png"
+	minToTray="icons/webcam.png|屏幕监控">
+	<JPanel layout="BoxLayout|X_AXIS" border="TitledBorder|服务状态">
+		<horizontalStrut>10</horizontalStrut>
+		<JLabel>状态：</JLabel>
+		<horizontalStrut>5</horizontalStrut>
+		<JLabel id="statusLabel">监控已启动</JLabel>
+		<horizontalGlue></horizontalGlue>
+	</JPanel>
+</Container>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Container>
+<Container title="色图看看" pack="true">
+	<JPanel layout="BoxLayout|Y_AXIS">
+		<verticalStrut>10</verticalStrut>
+		<ImageScroller id="imageScroller">images/21.jpg</ImageScroller>
+		<JPanel layout="BoxLayout|X_AXIS">
+			<horizontalGlue></horizontalGlue>
+			<SmartButton id="btnSwitch">上一个美图(←)</SmartButton>
+			<horizontalStrut>20</horizontalStrut>
+			<SmartButton id="btnSwitch2">下一个色图（→）</SmartButton>
+			<horizontalGlue></horizontalGlue>
+		</JPanel>
+		<verticalStrut>10</verticalStrut>
+	</JPanel>
+</Container>

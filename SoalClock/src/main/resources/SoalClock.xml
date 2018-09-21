@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Container>
+<Container layout="BoxLayout|Y_AXIS" title="自然醒计划" pack="true" resizable="false" iconImage="icons/heart.png" minToTray="icons/heart.png|生物钟调整计划！">
+	<JPanel layout="BoxLayout|Y_AXIS" border="TitledBorder|操作栏">
+		<JPanel layout="BoxLayout|Y_AXIS" border="TitledBorder|昨晚">
+			<JPanel layout="BoxLayout|X_AXIS">
+				<horizontalStrut>10</horizontalStrut>
+				<JLabel>入睡时间：</JLabel>
+				<JTextPane columns="7" preferredSize="60,25">2</JTextPane>
+				<JLabel>点</JLabel>
+				<horizontalStrut>10</horizontalStrut>
+			</JPanel>
+			<verticalStrut>5</verticalStrut>
+			<JPanel layout="BoxLayout|X_AXIS">
+				<horizontalStrut>10</horizontalStrut>
+				<JLabel>醒来时间：</JLabel>
+				<JTextPane columns="7">12</JTextPane>
+				<JLabel>点</JLabel>
+				<horizontalStrut>10</horizontalStrut>
+			</JPanel>
+		</JPanel>
+		<verticalStrut>10</verticalStrut>
+		<JPanel layout="BoxLayout|X_AXIS">
+			<horizontalStrut>10</horizontalStrut>
+			<JLabel>明天想</JLabel>
+			<horizontalStrut>5</horizontalStrut>
+			<JTextPane columns="3">7</JTextPane>
+			<JLabel>点起床</JLabel>
+			<horizontalStrut>20</horizontalStrut>
+		</JPanel>
+	</JPanel>
+</Container>

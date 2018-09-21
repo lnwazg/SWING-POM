@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Container>
+<Container layout="BoxLayout|Y_AXIS" title="小wiki" pack="true" resizable="true" iconImage="icons/wiki.png" minToTray="icons/wiki.png|小wiki">
+	<JPanel layout="BoxLayout|X_AXIS" border="TitledBorder|请输入查询词汇">
+		<horizontalStrut>10</horizontalStrut>
+		<JTextField id="queryWord"></JTextField>
+		<horizontalGlue></horizontalGlue>
+	</JPanel>
+	<JPanel layout="BoxLayout|Y_AXIS" border="TitledBorder|查询结果">
+		<JScrollPane visible="false" id="explainPane" preferredSize="600,300" border="CompoundBorder|0,2,0,2" horizontalScrollBarPolicy="HORIZONTAL_SCROLLBAR_NEVER" verticalScrollBarPolicy="VERTICAL_SCROLLBAR_AS_NEEDED">
+			<JTextPane id="logScreen" background="white" caretColor="red" foreground="black" editable="true" />
+		</JScrollPane>
+		<JScrollPane visible="true" id="availWordListPane" preferredSize="600,300" border="CompoundBorder|0,2,0,2" horizontalScrollBarPolicy="HORIZONTAL_SCROLLBAR_NEVER" verticalScrollBarPolicy="VERTICAL_SCROLLBAR_AS_NEEDED">
+			<JList id="availWordList"></JList>
+		</JScrollPane>
+		<verticalStrut>5</verticalStrut>
+		<JPanel layout="BoxLayout|X_AXIS">
+			<horizontalGlue></horizontalGlue>
+			<SmartButton id="delThisWord">删除本词条</SmartButton>
+			<horizontalGlue></horizontalGlue>
+		</JPanel>
+	</JPanel>
+	<JPanel layout="BoxLayout|X_AXIS" border="TitledBorder|设置">
+		<horizontalStrut>10</horizontalStrut>
+		<JLabel>全文搜索开关：</JLabel>
+		<IOS7SwitchButton id="switchBtn" status="false"></IOS7SwitchButton>
+		<horizontalGlue></horizontalGlue>
+	</JPanel>
+</Container>

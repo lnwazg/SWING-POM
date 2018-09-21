@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Container>
+<Container title="记账助手" layout="BoxLayout|Y_AXIS" pack="true">
+	<JPanel layout="BoxLayout|X_AXIS" border="TitledBorder|快捷操作" preferredSize="400,150">
+		<horizontalGlue></horizontalGlue>
+		<SmartButton id="chooseFile">选择记账文件并处理</SmartButton>
+		<horizontalStrut>10</horizontalStrut>
+		<SmartButton id="again">再次处理</SmartButton>
+		<horizontalGlue></horizontalGlue>
+	</JPanel>
+	<JPanel layout="BoxLayout|X_AXIS" border="TitledBorder|状态">
+		<horizontalStrut>10</horizontalStrut>
+		<JLabel>上次操作文件：</JLabel>
+		<horizontalStrut>5</horizontalStrut>
+		<JLabel id="lastFileLabel"></JLabel>
+		<horizontalGlue></horizontalGlue>
+	</JPanel>
+</Container>

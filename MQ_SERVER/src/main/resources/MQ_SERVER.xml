@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Container>
+<Container layout="BoxLayout|Y_AXIS" title="我的消息服务器" pack="true" resizable="false" iconImage="icons/mq.png" minToTray="icons/mq.png|我的私有MQ，超强稳定性与可移植性！">
+	<JPanel layout="BoxLayout|X_AXIS" border="TitledBorder|设置">
+		<horizontalStrut>10</horizontalStrut>
+		<JLabel>开关：</JLabel>
+		<IOS7SwitchButton id="switchBtn" status="false"></IOS7SwitchButton>
+		<horizontalStrut>10</horizontalStrut>
+		<JLabel>端口号：</JLabel>
+		<JTextField id="portInputText"></JTextField>		
+		<horizontalGlue></horizontalGlue>
+	</JPanel>
+	<JPanel layout="BoxLayout|Y_AXIS" border="TitledBorder|实时日志">
+		<JScrollPane preferredSize="240,180" border="CompoundBorder|0,2,0,2" horizontalScrollBarPolicy="HORIZONTAL_SCROLLBAR_NEVER" verticalScrollBarPolicy="VERTICAL_SCROLLBAR_AS_NEEDED">
+			<JTextArea id="logScreen" wrapStyleWord="true" lineWrap="true" background="black" caretColor="white" foreground="white"  editable="false"/>
+		</JScrollPane>
+	</JPanel>
+	<JPanel layout="BoxLayout|X_AXIS" border="TitledBorder|服务状态">
+		<horizontalStrut>10</horizontalStrut>
+		<JLabel>状态：</JLabel>
+		<horizontalStrut>5</horizontalStrut>
+		<JLabel id="statusLabel">MQ服务器已开启</JLabel>
+		<horizontalGlue></horizontalGlue>
+	</JPanel>	
+</Container>

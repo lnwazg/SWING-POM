@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HardLayoutPane>
+<HardLayoutPane>
+	<JLabel w="1">对方ID号：</JLabel>
+	<JTextField id="editId2" columns="38" w="3"></JTextField>
+	<NextLine />
+	<JLabel w="1">发送内容：</JLabel>
+	<JTextField id="editContent2" columns="38" w="3"></JTextField>
+	<NextLine />
+	<JButton id="btnSend2" UI="BEButtonUI|NormalColor.green" w="4" foreground="white">发送消息</JButton>
+	<NextLine />
+</HardLayoutPane>

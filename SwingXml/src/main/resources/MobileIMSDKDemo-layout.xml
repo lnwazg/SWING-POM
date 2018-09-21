@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Container>
+<Container layout="BorderLayout">
+	<JPanel id="leftPanel" position="West" layout="BorderLayout">
+		<HardLayoutPane id="oprPanel" position="North">
+			<TitledLineSeparator>登陆认证</TitledLineSeparator>
+			<HardLayoutPane id="authPanel" w="1">
+				<JPanel id="serverInfoPane" w="2" layout="BorderLayout">
+					<JTextField id="editServerIp" position="Center" columns="16" foreground="13, 148, 252">rbcore.openmob.net</JTextField>
+					<JPanel id="portInfoPane" position="East" layout="BorderLayout">
+						<JLabel position="West">：</JLabel>
+						<JTextField id="editServerPort" position="Center" columns="5" foreground="13, 148, 252">7901</JTextField>
+					</JPanel>
+				</JPanel>
+				<NextLine />
+				<JLabel w="1">用户名：</JLabel>
+				<JTextField id="editLoginName" columns="22" w="1"></JTextField>
+				<NextLine />
+				<JLabel w="1">密 码：</JLabel>
+				<JPasswordField id="editLoginPsw" columns="22" w="1"></JPasswordField>
+				<NextLine />
+				<JButton id="btnLogin" w="1" UI="BEButtonUI|NormalColor.blue" foreground="white">登陆</JButton>
+				<JButton id="btnLogout" w="1">退出</JButton>
+				<NextLine />
+				<JLabel w="1">我的id：</JLabel>
+				<JPanel id="idAndVerPanel" layout="BoxLayout|2" w="1">
+					<JLabel id="viewMyid" foreground="255, 0, 255">未登陆</JLabel>
+					<horizontalGlue />
+					<JLabel id="lbVer" foreground="184, 184, 184">v2.1b151012.1O</JLabel>
+				</JPanel>
+				<NextLine />
+			</HardLayoutPane>
+			<TitledLineSeparator>消息发送</TitledLineSeparator>
+			<HardLayoutPane id="toPanel" w="1">
+				<JLabel w="1">对方ID号：</JLabel>
+				<JTextField id="editId" columns="38" w="3"></JTextField>
+				<NextLine />
+				<JLabel w="1">发送内容：</JLabel>
+				<JTextField id="editContent" columns="38" w="3"></JTextField>
+				<NextLine />
+				<JButton id="btnSend" UI="BEButtonUI|NormalColor.green" w="4" foreground="white">发送消息</JButton>
+				<NextLine />
+			</HardLayoutPane>
+			<TitledLineSeparator>我的自定义</TitledLineSeparator>
+			<HardLayoutPane id="refPanel" w="1" xmlRef="refPanel.xml" />
+			<TitledLineSeparator />
+		</HardLayoutPane>
+		<JScrollPane id="imInfoSc" position="Center" border="CompoundBorder|0,7,0,7" horizontalScrollBarPolicy="31">
+			<JTextPane id="imInfoPane" />
+		</JScrollPane>
+	</JPanel>
+	<JScrollPane id="sc" position="Center" border="CompoundBorder|4,0,0,2" horizontalScrollBarPolicy="31">
+		<JTextPane id="debugPane" background="black" caretColor="white" />
+	</JScrollPane>
+</Container>

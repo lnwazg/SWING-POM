@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Container>
+<Container layout="BoxLayout|Y_AXIS" title="我的MQ客户端" pack="true" resizable="false">
+	<JPanel>
+		<JTabbedPane preferredSize="380,280" id="tabPane">
+			<JPanel border="TitledBorder|操作区" tabText="发消息">
+				<JPanel layout="BoxLayout|Y_AXIS">
+					<verticalStrut>10</verticalStrut>
+					<JPanel layout="BoxLayout|X_AXIS" preferredSize="250,25">
+						<horizontalStrut>10</horizontalStrut>
+						<JLabel>节点：</JLabel>
+						<JTextField id="sm_node_text"></JTextField>
+						<horizontalGlue></horizontalGlue>
+					</JPanel>
+					<verticalStrut>10</verticalStrut>
+					<JPanel layout="BoxLayout|X_AXIS" preferredSize="250,25">
+						<horizontalStrut>10</horizontalStrut>
+						<JLabel>内容：</JLabel>
+						<JTextField id="sm_content_text"></JTextField>
+						<horizontalGlue></horizontalGlue>
+					</JPanel>
+					<verticalStrut>20</verticalStrut>
+					<JPanel layout="BoxLayout|X_AXIS" preferredSize="300,25">
+						<horizontalGlue></horizontalGlue>
+						<SmartButton id="sm_btn">发送1条</SmartButton>
+						<horizontalStrut>20</horizontalStrut>
+						<SmartButton id="sm_btn10000">压测1w条(异步)</SmartButton>
+						<horizontalStrut>20</horizontalStrut>
+						<SmartButton id="sm_btn10000_2">压测1w条(同步)</SmartButton>
+						<horizontalGlue></horizontalGlue>
+					</JPanel>
+
+					<verticalGlue></verticalGlue>
+				</JPanel>
+			</JPanel>
+			<JPanel border="TitledBorder|操作区" tabText="收消息">
+				<JPanel layout="BoxLayout|Y_AXIS">
+					<verticalStrut>10</verticalStrut>
+					<JPanel layout="BoxLayout|X_AXIS" preferredSize="250,25">
+						<horizontalStrut>10</horizontalStrut>
+						<JLabel>节点：</JLabel>
+						<JTextField id="rm_node_text"></JTextField>
+						<horizontalGlue></horizontalGlue>
+					</JPanel>
+					<verticalStrut>10</verticalStrut>
+					<JPanel layout="BoxLayout|X_AXIS" preferredSize="250,25">
+						<horizontalStrut>10</horizontalStrut>
+						<JLabel>数量：</JLabel>
+						<JTextField id="rm_num_text">5</JTextField>
+						<horizontalGlue></horizontalGlue>
+					</JPanel>
+					<verticalStrut>20</verticalStrut>
+					<SmartButton id="rm_btn">确定</SmartButton>
+					<verticalGlue></verticalGlue>
+				</JPanel>
+			</JPanel>
+			<JPanel tabText="统计">
+				<JPanel layout="BoxLayout|Y_AXIS">
+					<horizontalStrut>10</horizontalStrut>
+					<JScrollPane preferredSize="250,195" border="CompoundBorder|0,0,0,0" horizontalScrollBarPolicy="HORIZONTAL_SCROLLBAR_NEVER" verticalScrollBarPolicy="VERTICAL_SCROLLBAR_AS_NEEDED">
+						<JTextArea id="sta_text" wrapStyleWord="true" lineWrap="true" editable="false" />
+					</JScrollPane>
+					<horizontalGlue></horizontalGlue>
+				</JPanel>
+			</JPanel>
+			<JPanel tabText="设置">
+				<JPanel layout="BoxLayout|Y_AXIS">
+					<verticalStrut>10</verticalStrut>
+					<JPanel layout="BoxLayout|X_AXIS" preferredSize="250,25">
+						<horizontalStrut>10</horizontalStrut>
+						<JLabel>服务器地址：</JLabel>
+						<JTextField id="set_server_addr_text"></JTextField>
+						<horizontalGlue></horizontalGlue>
+					</JPanel>
+					<verticalStrut>10</verticalStrut>
+					<JPanel layout="BoxLayout|X_AXIS" preferredSize="250,25">
+						<horizontalStrut>10</horizontalStrut>
+						<JLabel>服务器端口：</JLabel>
+						<JTextField id="set_server_port_text"></JTextField>
+						<horizontalGlue></horizontalGlue>
+					</JPanel>
+					<verticalStrut>10</verticalStrut>
+					<JPanel layout="BoxLayout|X_AXIS" preferredSize="250,25">
+						<horizontalStrut>10</horizontalStrut>
+						<JLabel>集群配置开关：</JLabel>
+						<JCheckBox id="cluster_switch_checkbox"></JCheckBox>
+						<horizontalGlue></horizontalGlue>
+					</JPanel>					
+					<verticalStrut>5</verticalStrut>
+					<JPanel layout="BoxLayout|X_AXIS" preferredSize="250,80">
+						<horizontalStrut>10</horizontalStrut>
+						<JLabel>集群配置信息：</JLabel>
+						<JScrollPane  border="CompoundBorder|0,0,0,0" horizontalScrollBarPolicy="HORIZONTAL_SCROLLBAR_NEVER" verticalScrollBarPolicy="VERTICAL_SCROLLBAR_AS_NEEDED">
+							<JTextArea id="cluster_config_info_text" wrapStyleWord="true" lineWrap="true"></JTextArea>
+						</JScrollPane>						
+						<horizontalGlue></horizontalGlue>
+					</JPanel>
+					<verticalStrut>5</verticalStrut>
+					<SmartButton id="set_btn">确定</SmartButton>
+					<verticalGlue></verticalGlue>
+				</JPanel>
+			</JPanel>
+		</JTabbedPane>
+	</JPanel>
+</Container>

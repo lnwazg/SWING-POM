@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Container>
+<!-- minToTray="icons/logo.png|我的BI工具"  -->
+<Container title="BI工具" layout="BoxLayout|Y_AXIS" pack="true" iconImage="icons/logo.png">
+	<JPanel layout="BoxLayout|X_AXIS" border="TitledBorder|快捷操作" preferredSize="500,80">
+		<horizontalGlue></horizontalGlue>
+		<SmartButton id="chooseFile">选择BI配置文件并处理</SmartButton>
+		<horizontalStrut>10</horizontalStrut>
+		<SmartButton id="again">再次处理</SmartButton>
+		<horizontalGlue></horizontalGlue>
+	</JPanel>
+	<JPanel layout="BoxLayout|Y_AXIS" border="TitledBorder|实时日志">
+		<JScrollPane id="logScroller" preferredSize="500,300" border="CompoundBorder|0,2,0,2" horizontalScrollBarPolicy="HORIZONTAL_SCROLLBAR_NEVER" verticalScrollBarPolicy="VERTICAL_SCROLLBAR_AS_NEEDED">
+			<JTextPane id="logScreen" background="black" caretColor="white" foreground="white" editable="false" />
+		</JScrollPane>
+		<verticalStrut>5</verticalStrut>
+		<JPanel layout="BoxLayout|X_AXIS">
+			<horizontalGlue></horizontalGlue>
+			<SmartButton id="clearLog">清空日志</SmartButton>
+			<horizontalGlue></horizontalGlue>
+		</JPanel>
+	</JPanel>
+	<JPanel layout="BoxLayout|X_AXIS" border="TitledBorder|状态">
+		<horizontalStrut>10</horizontalStrut>
+		<JLabel>上次操作文件：</JLabel>
+		<horizontalStrut>5</horizontalStrut>
+		<JLabel id="lastFileLabel"></JLabel>
+		<horizontalGlue></horizontalGlue>
+	</JPanel>
+</Container>

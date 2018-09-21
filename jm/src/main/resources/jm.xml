@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Container>
+<Container layout="BoxLayout|Y_AXIS" title="加解密" pack="true" resizable="false">
+	<JPanel layout="BoxLayout|Y_AXIS" border="TitledBorder|操作">
+		<JPanel layout="BoxLayout|X_AXIS">
+			<horizontalStrut>5</horizontalStrut>
+			<JLabel>请输入明文：</JLabel>
+			<horizontalStrut>10</horizontalStrut>
+			<JTextField id="src_text"></JTextField>
+			<horizontalGlue></horizontalGlue>
+		</JPanel>
+		<JPanel layout="BoxLayout|X_AXIS">
+			<horizontalStrut>5</horizontalStrut>
+			<JLabel>请输入密文：</JLabel>
+			<horizontalStrut>10</horizontalStrut>
+			<JTextField id="target_text"></JTextField>
+			<horizontalGlue></horizontalGlue>
+		</JPanel>
+	</JPanel>
+	<JPanel layout="BoxLayout|X_AXIS" border="TitledBorder|结果">
+		<JScrollPane preferredSize="300,150">
+			<JTextArea lineWrap="true" id="result"></JTextArea>
+		</JScrollPane>
+	</JPanel>
+	<JPanel layout="BoxLayout|X_AXIS" border="TitledBorder|操作">
+		<horizontalGlue></horizontalGlue>
+		<SmartButton id="btn_encrypt">加密</SmartButton>
+		<horizontalStrut>10</horizontalStrut>
+		<SmartButton id="btn_decrypt">解密</SmartButton>
+		<horizontalGlue></horizontalGlue>
+	</JPanel>
+</Container>

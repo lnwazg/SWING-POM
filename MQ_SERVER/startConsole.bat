@@ -1,0 +1,1 @@
+java -cp MQ_SERVER-1.1.jar com.lnwazg.ui.MainConsole 5566

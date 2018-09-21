@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Container>
+<Container layout="BoxLayout|Y_AXIS" title="工作生活辅助系统" pack="true" resizable="false" iconImage="icons/work.png" minToTray="icons/work.png|自动作业控制系统，持久你的战斗力！">
+	<JPanel layout="BoxLayout|X_AXIS" border="TitledBorder|快捷操作">
+		<horizontalStrut>10</horizontalStrut>
+		<SmartButton id="doAllBtn" background="green">一键执行全部</SmartButton>
+		<horizontalStrut>10</horizontalStrut>
+		<JLabel>自动执行：</JLabel>
+		<IOS7SwitchButton id="switchBtn"></IOS7SwitchButton>
+		<horizontalStrut>10</horizontalStrut>
+		<JLabel>智能提醒(A)：</JLabel>
+		<IOS7SwitchButton id="popupMsgSwitchBtn"></IOS7SwitchButton>
+		<horizontalStrut>10</horizontalStrut>
+		<JLabel>箴言开关(S)：</JLabel>
+		<IOS7SwitchButton id="realWordsSwitchBtn"></IOS7SwitchButton>
+		<horizontalGlue></horizontalGlue>
+		<horizontalStrut>10</horizontalStrut>
+	</JPanel>
+	<JPanel layout="BoxLayout|X_AXIS" border="TitledBorder|作业列表">
+		<horizontalStrut>10</horizontalStrut>
+		<JScrollPane preferredSize="220,180">
+			<JPanel layout="BoxLayout|Y_AXIS">
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>5</horizontalStrut>
+					<JLabel>1、</JLabel>
+					<SmartButton id="syncFolderBtn">工作文件夹U盘同步</SmartButton>
+					<horizontalGlue></horizontalGlue>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>5</horizontalStrut>
+					<JLabel>2、</JLabel>
+					<SmartButton id="updateSvnBtn">更新E盘svn代码</SmartButton>
+					<horizontalGlue></horizontalGlue>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+				<JPanel layout="BoxLayout|X_AXIS">
+					<horizontalStrut>5</horizontalStrut>
+					<JLabel>3、</JLabel>
+					<SmartButton id="commitSvnBtn">提交E盘svn代码</SmartButton>
+					<horizontalGlue></horizontalGlue>
+				</JPanel>
+				<verticalStrut>5</verticalStrut>
+			</JPanel>
+		</JScrollPane>
+		<horizontalGlue></horizontalGlue>
+		<horizontalStrut>10</horizontalStrut>
+	</JPanel>
+	<JPanel layout="BoxLayout|X_AXIS" border="TitledBorder|精力管理">
+		<horizontalStrut>10</horizontalStrut>
+		<SmartButton id="yawnRecord" background="green">记录打呵欠(Q)</SmartButton>
+		<horizontalGlue></horizontalGlue>
+	</JPanel>
+	<JPanel layout="BoxLayout|X_AXIS" border="TitledBorder|日程管理">
+		<horizontalStrut>10</horizontalStrut>
+		<SmartButton id="todayTask" background="green">今天提醒(1)</SmartButton>
+		<horizontalStrut>10</horizontalStrut>
+		<SmartButton id="tomorrowTask" background="green">明天提醒(2)</SmartButton>
+		<horizontalStrut>10</horizontalStrut>
+		<SmartButton id="afterTomorrowTask" background="green">后天提醒(3)</SmartButton>
+		<horizontalGlue></horizontalGlue>
+	</JPanel>
+	<JPanel layout="BoxLayout|X_AXIS" border="TitledBorder|工具">
+		<horizontalStrut>10</horizontalStrut>
+		<SmartButton id="syncBaiduNotes" background="green">乾坤大挪移(N)</SmartButton>
+		<horizontalGlue></horizontalGlue>
+	</JPanel>
+	<JPanel layout="BoxLayout|X_AXIS" border="TitledBorder|其他管理">
+		<horizontalStrut>10</horizontalStrut>
+		<SmartButton id="shutdownBtn">关机(F1)</SmartButton>
+		<horizontalGlue></horizontalGlue>
+	</JPanel>
+	<JPanel layout="BoxLayout|X_AXIS" border="TitledBorder|状态" preferredSize="270,40">
+		<horizontalStrut>10</horizontalStrut>
+		<JLabel>状态：</JLabel>
+		<horizontalStrut>5</horizontalStrut>
+		<JLabel id="status">待机中</JLabel>
+		<horizontalGlue></horizontalGlue>
+	</JPanel>
+</Container>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Container>
+<Container layout="BorderLayout">
+	<HardLayoutPane position="Center">
+		<TitledLineSeparator>美女图</TitledLineSeparator>
+		<JScrollPane id="sc" border="CompoundBorder|4,0,4,0" horizontalScrollBarPolicy="31">
+			<JLabel id="picLabel">这是我的测试图像第三方公司的规定十分感动十分广泛的</JLabel>
+		</JScrollPane>
+	</HardLayoutPane>
+	<HardLayoutPane position="South">
+		<TitledLineSeparator>点评区</TitledLineSeparator>
+		<HardLayoutPane w="1">
+			<JButton id="btnGood" UI="BEButtonUI|NormalColor.green" w="1" foreground="white">好看</JButton>
+			<JButton id="btnBad" w="1">不好看</JButton>
+			<JButton id="btnGood2" UI="BEButtonUI|NormalColor.green" w="1" foreground="white">好看</JButton>
+			<JButton id="btnBad2" w="1">不好看</JButton>
+		</HardLayoutPane>
+		<TitledLineSeparator>功能操作区</TitledLineSeparator>
+		<HardLayoutPane id="authPanel" w="1">
+			<JPanel id="serverInfoPane" w="2" layout="BorderLayout">
+				<JTextField id="editServerIp" position="Center" columns="16" foreground="13, 148, 252">rbcore.openmob.net</JTextField>
+				<JPanel id="portInfoPane" position="East" layout="BorderLayout">
+					<JLabel position="West">：</JLabel>
+					<JTextField id="editServerPort" position="Center" columns="5" foreground="13, 148, 252">7901</JTextField>
+				</JPanel>
+			</JPanel>
+			<NextLine />
+			<JLabel w="1">用户名：</JLabel>
+			<JTextField id="editLoginName" columns="22" w="1"></JTextField>
+			<NextLine />
+			<JLabel w="1">密 码：</JLabel>
+			<JPasswordField id="editLoginPsw" columns="22" w="1"></JPasswordField>
+			<NextLine />
+			<JButton id="btnLogin" w="1" UI="BEButtonUI|NormalColor.blue" foreground="white">登陆</JButton>
+			<JButton id="btnLogout" w="1">退出</JButton>
+			<NextLine />
+			<JLabel w="1">我的id：</JLabel>
+			<JPanel id="idAndVerPanel" layout="BoxLayout|2" w="1">
+				<JLabel id="viewMyid" foreground="255, 0, 255">未登陆</JLabel>
+				<horizontalGlue />
+				<JLabel id="lbVer" foreground="184, 184, 184">v2.1b151012.1O</JLabel>
+			</JPanel>
+			<NextLine />
+		</HardLayoutPane>
+	</HardLayoutPane>
+</Container>
