@@ -36,37 +36,4 @@ public interface MessageDao extends MyJdbc
     
     @Select("select node,count(content) count from MESSAGE where 1=1 group by node order by node")
     List<Map<String, Object>> queryAvailableMsgNumGroupByNode();
-    
-    //    @Select("select * from city_info")
-    //    List<CityInfo> queryAllCities();
-    //    
-    //    @Select("select * from insurance_items")
-    //    List<InsuranceItem> queryInsuranceItems();
-    //    
-    //    @Select("select * from city_info where city_id=#{city_id}")
-    //    CityInfo queryOneCity(@Param("city_id") String city_id);
-    //    
-    //    @Select("select * from city_info where city_id=#{city_id}")
-    //    CityInfo queryOneCity(Map<String, Object> paramMap);
-    //    
-    //    @Select("select count(1) from city_info")
-    //    int queryCityCount();
-    //    
-    //    @Select("select * from insurance_items limit ${start},${limit}")
-    //    List<InsuranceItem> queryInsuranceItemsByPage(@Param("start") String start, @Param("limit") String limit);
-    //    
-    //    @Select("select * from insurance_items limit ${start},${limit}")
-    //    List<InsuranceItem> queryInsuranceItemsByPage(Map<String, Object> paramMap);
-    //    
-    //    @Select("select * from insurance_order")
-    //    List<InsuranceOrder> queryOrderInfos();
-    //    
-    //    @Select("select count(1) from insurance_order")
-    //    int queryOrderInfosCount();
-    //    
-    //    @Select("select count(1) from test")
-    //    int queryTestCount();
-    //    
-    //    @Update("update test set aaaa=#{aaaa} where id=#{id}")
-    //    int updateTest(Map<String, Object> paramMap);
 }
