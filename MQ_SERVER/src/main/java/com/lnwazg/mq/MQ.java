@@ -94,8 +94,8 @@ public class MQ
                     String reqStr = new String(request, CharEncoding.UTF_8);
                     String rspStr = MessageHandler.handle(reqStr);
                     byte[] response = rspStr.getBytes(CharEncoding.UTF_8);
-                    response = GzipBytesUtils.zip(response);//然后对响应的数据进行压缩处理，减少传输量的消耗
-                    response = SecurityUtils.aesEncode(response, PasswordKit.PASSWORD);//加密
+                    response = GzipBytesUtils.zip(response);//然后对数据进行压缩处理，减少传输量的消耗
+                    response = SecurityUtils.aesEncode(response, PasswordKit.PASSWORD);//数据加密
                     socket.send(response, 0);
                     
                     MyZooClient.monitorInvokeOnce(nodeName);
