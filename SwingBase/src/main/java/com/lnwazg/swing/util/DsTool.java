@@ -13,7 +13,7 @@ import javax.swing.JTextPane;
 import org.apache.commons.lang3.StringUtils;
 
 import com.lnwazg.dbkit.jdbc.MyJdbc;
-import com.lnwazg.dbkit.tools.ioc.component.DBConfigHelper;
+import com.lnwazg.dbkit.tools.dbcache.tablemap.DBConfigHelper;
 import com.lnwazg.dbkit.utils.DbKit;
 import com.lnwazg.kit.executor.ExecMgr;
 import com.lnwazg.kit.log.Logs;
