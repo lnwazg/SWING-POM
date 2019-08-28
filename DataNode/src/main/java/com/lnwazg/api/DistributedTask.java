@@ -58,7 +58,7 @@ public abstract class DistributedTask
         //总任务数量
         totalTaskNum = Integer.valueOf(map.get("totalTaskNum").toString());
         
-        Logs.i("当前节点编号:" + nodeNum + " 总节点数：" + totalNodes + " 总任务数量:" + totalTaskNum);
+        Logs.i("当前节点编号:" + nodeNum + " 总节点数：" + totalNodes + " 总任务数量:" + (totalTaskNum == -1 ? "未定义" : totalTaskNum));
         
         //定制的执行内容
         executeCustom(map);

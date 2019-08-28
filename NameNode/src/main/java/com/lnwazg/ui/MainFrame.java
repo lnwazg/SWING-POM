@@ -276,7 +276,7 @@ public class MainFrame extends XmlJFrame
                 
                 //总任务数量
                 int totalTaskNum = (int)RemoteJarKit.invokeRemoteObjectByPropertyFile(jarUrl, MAIN_CLASS_PROPERTIES_FILE_NAME, "getTotalTaskNum");
-                Logs.i("总任务数量:" + totalTaskNum);
+                Logs.i("总任务数量:" + (totalTaskNum == -1 ? "未定义" : totalTaskNum));
                 
                 for (String targetAddress : onlineDataNodeInfoMap.keySet())
                 {

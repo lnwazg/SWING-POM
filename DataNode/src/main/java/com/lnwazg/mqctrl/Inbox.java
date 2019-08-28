@@ -78,7 +78,6 @@ public class Inbox extends BaseController
                 
                 //调用远程jar包的指定配置文件的主类的指定方法，传入指定的参数表
                 RemoteJarKit.invokeRemoteObjectByPropertyFile(jarUrl, "MainClass.properties", "execute", new Class[] {Map.class}, paramMap);
-                
                 WinMgr.win(MainFrame.class).showStatus(jarName + "执行完毕");
             }
         });
