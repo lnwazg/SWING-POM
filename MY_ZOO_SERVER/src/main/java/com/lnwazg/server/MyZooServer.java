@@ -109,7 +109,7 @@ public class MyZooServer
             B.s(MyJdbc.class, jdbc);
             
             //启动一个守护进程，每隔30秒刷新一次各个节点的调用情况并显示
-            ExecMgr.startDaemenThread(() -> {
+            ExecMgr.startThread(() -> {
                 while (true)
                 {
                     //只有当数据库真正初始化完毕之后才进行操作
