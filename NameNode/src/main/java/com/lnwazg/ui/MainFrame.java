@@ -423,7 +423,7 @@ public class MainFrame extends XmlJFrame
         });
         
         //开启后台线程，每10秒刷新显示最后一次客户端的心跳时间
-        ExecMgr.startDaemenThread(() -> {
+        ExecMgr.startThread(() -> {
             while (true)
             {
                 //刷新在线列表

@@ -101,7 +101,7 @@ public class MainFrame extends XmlJFrame
                 Logs.i("MQ初始化成功！");
                 
                 //开启后台线程，定期上报自己的状态
-                ExecMgr.startDaemenThread(() -> {
+                ExecMgr.startThread(() -> {
                     while (true)
                     {
                         //需要将自己上报上去，告诉NameNode： 本DataNode已经上线了！
